@@ -4,7 +4,7 @@
 
 It was conceived while building custom WCAG-related controls for the WordPress Customizer for [wplemon.com](https://wplemon.com).
 
-It is vanilla JS with no dependencies whatsoever.
+It is vanilla JS with no dependencies whatsoever and its size gzipped is less than 4Kb so you can use it without adding any bloat to your projects.
 
 ## Structure
 
@@ -107,3 +107,7 @@ var colorsArray = colorsReadableOnWhiteSorted.getHexArray();
 ```
 
 The object contains numerous helper functions, for more details on those you can take a look at the code on the [github repository](https://github.com/aristath/wcagColors.js/blob/master/wcagColors.js). All functions have adequate inline docs you can refer to.
+
+## License:
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
