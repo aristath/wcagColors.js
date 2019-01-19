@@ -45,7 +45,7 @@ wcagColors = {
 		params.stepSaturation = params.stepSaturation || 0.1;
 		params.stepLightness  = params.stepLightness || 0.1;
 		params.minHueDiff     = params.minHueDiff || 0;
-		params.maxHueDiff     = params.maxHueDiff || 359;
+		params.maxHueDiff     = params.maxHueDiff || 360;
 		params.stepHue        = params.stepHue || 15;
 
 		if ( 0 === params.maxHueDiff ) {
