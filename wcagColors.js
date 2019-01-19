@@ -202,17 +202,19 @@ wcagColors = {
 
 		for ( saturation = args.minSaturation; args.maxSaturation >= saturation; saturation += args.stepSaturation ) {
 			for ( lightness = 0; 1.001 >= lightness; lightness += args.stepLightness ) {
-				color = this.hslToRgb( hue, saturation, lightness );
-				colors.push({
-					r: color.r,
-					g: color.g,
-					b: color.b,
-					h: hue,
-					s: saturation,
-					l: lightness,
-					hex: this.rgbToHex( color.r, color.g, color.b ),
-					lum: this.getRelativeLuminance( color )
-				});
+				if ( 0 <= hue && 359 >= hue ) {
+					color = this.hslToRgb( hue, saturation, lightness );
+					colors.push({
+						r: color.r,
+						g: color.g,
+						b: color.b,
+						h: hue,
+						s: saturation,
+						l: lightness,
+						hex: this.rgbToHex( color.r, color.g, color.b ),
+						lum: this.getRelativeLuminance( color )
+					});
+				}
 			}
 		}
 		return colors;
