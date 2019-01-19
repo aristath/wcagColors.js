@@ -165,7 +165,7 @@ wcagColors = {
 			hsl = this.rgbToHsl( rgb.r, rgb.g, rgb.b );
 			hex = this.rgbToHex( rgb.r, rgb.g, rgb.b );
 		} else {
-			hex = color;
+			hex = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test( color ) ? color : '#ffffff';
 			rgb = this.hexToRgb( hex );
 			hsl = this.rgbToHsl( rgb.r, rgb.g, rgb.b );
 		}
