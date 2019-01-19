@@ -47,7 +47,19 @@ How detailed the search for colors is is determined by the `stepHue`, `stepSatur
 
 The result is an array containing 11 colors, sorted by their saturation levels:
 ```js
-[ "#5946b9", "#573cdd", "#5336e2", "#4f30e8", "#554cb3", "#5046b9", "#4e42d7", "#493cdd", "#4c4cb3", "#4747d1", "#4242d7" ]
+[
+    "#4f30e8",
+    "#5336e2",
+    "#493cdd",
+    "#573cdd",
+    "#4242d7",
+    "#4e42d7",
+    "#4747d1",
+    "#5046b9",
+    "#5946b9",
+    "#4c4cb3",
+    "#554cb3",
+];
 ```
 
 ## Functions:
