@@ -27,7 +27,7 @@ wcagColors = {
 	 * @param {int}    params.stepHue - How many degrees to turn the colorwheel on each iteration.
 	 * @returns {Object} - this
 	 */
-	getAll( params ) {
+	getAll: function( params ) {
 		var allColors = [],
 			hueOffset,
 			hueUp,
@@ -92,7 +92,7 @@ wcagColors = {
 	 * @param {int}           criteria.minContrast - The minimum contrast required to pass.
 	 * @returns {Object} - this
 	 */
-	pluck( criteria ) {
+	pluck: function( criteria ) {
 		var validColors = [],
 			pass,
 			i;
