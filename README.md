@@ -24,6 +24,8 @@ var colors = wcagColors.getAll({ // Populate the initial pool of colors.
     minSaturation: 0.4,
     maxSaturation: 1,
     stepSaturation: 0.05,
+    minLightness: 0,
+    maxLightness: 1.001,
     stepLightness: 0.05,
 }).pluck({ // We want our color to have a minimum contrast of 7:1 with a white background.
     color: '#ffffff',
