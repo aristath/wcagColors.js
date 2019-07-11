@@ -203,7 +203,7 @@ wcagColors = {
 			color;
 
 		for ( saturation = args.minSaturation; args.maxSaturation >= saturation; saturation += args.stepSaturation ) {
-			for ( lightness = args.minLightness; maxLightness >= lightness; lightness += args.stepLightness ) {
+			for ( lightness = args.minLightness; args.maxLightness >= lightness; lightness += args.stepLightness ) {
 				if ( 0 <= hue && 359 >= hue ) {
 					color = this.hslToRgb( hue, saturation, lightness );
 					colors.push({
