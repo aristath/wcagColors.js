@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>WCAG-Colors Calculator</title>
+	<meta name="description" content="Find accessible color combinations">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<link href="css/styles.css" rel="stylesheet" media="all">
+</head>
+<body>
+	<header role="banner">
+		<h1>WCAG Colors Calculator</h1>
+	</header>
+
+	<div class="wrap">
+		<main role="main">
+			<section id="content">
+				<header id="settingsWrapper">
+					<div>
+						<h3>Background Color</h3>
+						<input id="color-picker-container" type="color" value="#fff">	
+					</div>
+					<div>
+						<h3>Links Hue</h3>
+						<div id="hue-slider"></div>	
+					</div>
+				</header>
+				<article id="preview">
+					<div class="details">
+						<div class="selectedTextColorIndicator"></div>
+						<div class="altTextColors"></div>
+						<div class="selectedLinksColorIndicator"></div>
+						<div class="altLinkColors"></div>
+					</div>
+					<div class="content">
+						<h3>Preview</h3>
+						<p>You can preview your color selections in this box.</p>
+						<p>You can change the background color using the colorwheen in the options. The text-color will be automatically calculated for maximum readability depending on the color you have selected for the background.</p>
+						<p>Links are a bit more complicated for WCAG compliance as they require a minimum contrast both with the selected background, as well as their surround text. <a id="linkPreview" href="#">This is an example link</a> so you can see how the auto-calculated values look.</p>
+						<p>You can also select from an array of other wcag-compliant colors we have detected from the list.</p>
+					</div>
+				</article>
+			</section>
+		</main>
+	</div>
+	<footer role="contentinfo">
+		<address>
+		  <p>For further information, please contact <a href="mailto:admin@example.com">Max Mustermann</a>.</p>
+		</address>
+		<small>Copyright &copy; <time>2018</time></small>
+	</footer>
+	<script src="js/iro.min.js"></script>
+	<!-- <script src="js/iro-transparency-plugin.min.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/wcagColors.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
