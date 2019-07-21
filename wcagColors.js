@@ -149,7 +149,7 @@ wcagColors = {
 		var hex, rgb, hsl, col;
 
 		if ( -1 !== color.indexOf( 'hsl' ) ) {
-			col = color.replace( 'hsla', '' ).replace( '.hsl', '' ).replace( '(', '' ).replace( ')', '' ).split( ',' );
+			col = color.replace( 'hsla', '' ).replace( 'hsl', '' ).replace( '(', '' ).replace( ')', '' ).split( ',' );
 			hsl = {
 				h: parseInt( col[0], 10 ),
 				s: parseInt( col[1], 10 ) / 100,
